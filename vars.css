@@ -1,0 +1,40 @@
+/* Figma Styles of your File */
+:root {
+  /* Colors */
+  --white: #ffffff;
+  --mediumgrey: #d5d4d8;
+  --green: #4adf86;
+  --darkgreen: #10b981;
+  --darkblue: #273549;
+  --lightgreen: #55f991;
+  --bordercolor: #2f3e53;
+  --white: #fff;
+  --background: #1f2937;
+
+  /* Fonts */
+  --base-font-family: "Karla-ExtraBold", sans-serif;
+  --text-xl-font-family: "Inter-Regular", sans-serif;
+  --text-paragraph-font-family: "Inter-Medium", sans-serif;
+
+  /* Effects */
+  --box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+
+  /* Typography - Text XL  */
+  --heading-1: var(--base-font-family);
+  --heading-1-font-size: 40px;
+  --heading-1-line-height: 40px;
+  --heading-1-font-weight: 800;
+  
+  /* Typography - Text XL  */
+  --text-xl: var(--text-xl-font-family);
+  --text-xl-font-size: 20px;
+  --text-xl-line-height: 28px;
+  --text-xl-font-weight: 400;
+
+  /* Typography - Text Paragraph */
+  --text-paragraph: var(--text-paragraph-font-family);
+  --text-paragraph-font-size: 16px;
+  --text-paragraph-line-height: 24px;
+  --text-paragraph-font-weight: 500;
+}
+

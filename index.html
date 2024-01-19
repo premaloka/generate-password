@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<link rel="stylesheet" href="vars.css">
+	<link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+	<title>Generate a random password</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="heading">
+			<span class="heading--first">Generate a</span>
+			<span class="heading--second">random password</span>
+		</div>
+		<p class="ingress">Never use an insecure password again.</p>
+		<button type="button" class="password-button" onclick="generate()">Generate passwords</button>
+		<div class="toggle">
+			<label for="symbols" class="toggle--label">
+				<input type="checkbox" id="toggle-symbols" value="symbols" />
+				Include Symbols
+			</label>
+			<label for="numbers" class="toggle--label">
+				<input type="checkbox" id="toggle-numbers" value="numbers" />
+				Include Numbers
+			</label>
+		</div>
+		<div class="password-wrapper">
+			<label for="psswrd" class="psswrd--label">
+				Password length:
+			</label>
+			<input type="text" id="psswrd" name="psswrd" value="15" />
+			<small>(max 20)</small>
+		</div>
+		<div class="line"></div>
+		<div class="output">
+			<div class="output--field" id="field-1" onclick="copyToClipboard(this)"></div>
+			<div class="output--field" id="field-2" onclick="copyToClipboard(this)"></div>
+		</div>
+		<small>(Password copied to clipboard when clicking on it!)</small>
+	</div>
+
+</body>
+
+</html>
