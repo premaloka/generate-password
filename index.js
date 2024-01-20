@@ -17,7 +17,7 @@ let output2El = document.getElementById("field-2")
 const symbolEl = document.getElementById('toggle-symbols');
 const numbersEl = document.getElementById('toggle-numbers');
 const passwordEl = document.getElementById("psswrd")
-const clipboardEl = document.getElementById("copiedToClipboard")
+const clipboardEl = document.getElementById("clipboard-message")
 const boxes = document.querySelectorAll("input[type='checkbox'], #psswrd")
 const outputFields = document.querySelectorAll(".output--field")
 
