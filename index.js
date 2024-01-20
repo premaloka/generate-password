@@ -56,10 +56,10 @@ function selectedOptions(e) {
 
 function copyMessage() {
     clipboardEl.textContent = "(Password copied to clipboard!)"
-    clipboardEl.style.display = "block"
+    // clipboardEl.style.display = "block"
     setTimeout(() => {
-        clipboardEl.style.display = "none"
-        // clipboardEl.textContent = ""
+        // clipboardEl.style.display = "none"
+        clipboardEl.textContent = ""
     }, 3000)    
 }    
 

@@ -135,6 +135,7 @@ small {
     color: var(--white);
     opacity: 24%;
     font-size: 12px;
+    height: 12px;
 }
 
 .output {
