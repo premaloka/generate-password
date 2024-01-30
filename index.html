@@ -5,9 +5,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@600;800&family=Roboto:wght@300;400;700&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="vars.css">
 	<link rel="stylesheet" href="index.css">
-    <script src="index.js" defer></script>
+	<script src="index.js" defer></script>
 	<title>Generate a random password</title>
 </head>
 
@@ -18,25 +23,37 @@
 			<span class="heading--second">random password</span>
 		</div>
 		<p class="ingress">Never use an insecure password again.</p>
+		<div class="two-columns">
+			<div class="settings">
+				<div class="toggle">
+					<label for="toggle-symbols" class="toggle--label">
+						Include Symbols
+					</label>
+					<input type="checkbox" id="toggle-symbols" value="symbols" />
+				</div>
+			</div>
+			<div class="settings">
+				<div class="toggle">
+					<label for="toggle-numbers" class="toggle--label">
+						Include Numbers
+					</label>
+					<input type="checkbox" id="toggle-numbers" value="numbers" />
+				</div>
+			</div>
+		</div>
+		<div class="settings">
+			<div class="setting-length">
+				<label for="psswrd" class="psswrd--label">
+					Password length: <span id="psswrd--length"> 12</span>
+				</label>
+				<input type="range" min="4" max="24" value="12" id="psswrd" name="psswrd" />
+				<!-- <small>(max 24)</small> -->
+			</div>
+			<p class="notice">Your browser does not support the <code>accent-color</code> property.</p>
+		</div>
+
 		<button type="button" class="password-button" onclick="generate()">Generate passwords</button>
-		<div class="toggle">
-			<label class="toggle--label">
-				<input type="checkbox" id="toggle-symbols" value="symbols" />
-				Include Symbols
-			</label>
-			<label class="toggle--label">
-				<input type="checkbox" id="toggle-numbers" value="numbers" />
-				Include Numbers
-			</label>
-		</div>
-		<div class="password-wrapper">
-			<label for="psswrd" class="psswrd--label">
-				Password length:
-			</label>
-			<input type="text" id="psswrd" name="psswrd" value="15" />
-			<small>(max 20)</small>
-		</div>
-		<div class="line"></div>
+		<hr>
 		<div class="output">
 			<div class="output--field" id="field-1" onclick="copyToClipboard(this)"></div>
 			<div class="output--field" id="field-2" onclick="copyToClipboard(this)"></div>

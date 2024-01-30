@@ -3,38 +3,51 @@
   /* Colors */
   --white: #ffffff;
   --mediumgrey: #d5d4d8;
-  --green: #4adf86;
-  --darkgreen: #10b981;
+  /* --green: #4adf86; */
+  --green: #E9AC00;
+  /* --green: #9F38FF; */
+  /* --darkgreen: #10b981; */
+  --darkgreen: #7E35FF;
   --darkblue: #273549;
-  --lightgreen: #55f991;
+  --darkblue: #3D3056;
+  /* --lightgreen: #55f991; */
+  --lightgreen: #FFCA35;
   --bordercolor: #2f3e53;
   --white: #fff;
-  --background: #1f2937;
+  /* --background: #1f2937; */
+  /* --background: #281F38; */
+  --background: #211C2B;
 
   /* Fonts */
-  --base-font-family: "Karla-ExtraBold", sans-serif;
-  --text-xl-font-family: "Inter-Regular", sans-serif;
-  --text-paragraph-font-family: "Inter-Medium", sans-serif;
+  --base-font-family: "Karla", sans-serif;
+  --roboto-font-family: "Roboto", sans-serif; 
+  --paragraph-font-family: "Inter", sans-serif;
 
   /* Effects */
   --box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
 
-  /* Typography - Text XL  */
-  --heading-1: var(--base-font-family);
-  --heading-1-font-size: 40px;
-  --heading-1-line-height: 40px;
-  --heading-1-font-weight: 800;
+  /* Typography - Heading 1 */
+  --heading-1: var(--roboto-font-family);
+  --heading-1-font-size: 54px;
+  --heading-1-line-height: 42px;
+  --heading-1-font-weight: 700;
   
-  /* Typography - Text XL  */
-  --text-xl: var(--text-xl-font-family);
-  --text-xl-font-size: 20px;
+  /* Typography - Heading 2  */
+  --heading-2: var(--roboto-font-family);
+  --heading-2-font-size: 40px;
+  --heading-2-line-height: 40px;
+  --heading-2-font-weight: 300;
+  
+  /* Typography - Text Ingress  */
+  --text-xl: var(--roboto-font-family);
+  --text-xl-font-size: 22px;
   --text-xl-line-height: 28px;
-  --text-xl-font-weight: 400;
+  --text-xl-font-weight: 300;
 
   /* Typography - Text Paragraph */
-  --text-paragraph: var(--text-paragraph-font-family);
-  --text-paragraph-font-size: 16px;
+  --text-paragraph: var(--paragraph-font-family);
+  --text-paragraph-font-size: 15px;
   --text-paragraph-line-height: 24px;
-  --text-paragraph-font-weight: 500;
+  --text-paragraph-font-weight: 400;
 }
 
