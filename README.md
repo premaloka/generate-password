@@ -10,4 +10,4 @@ Create a secure password with this password generator.
 
 With a click you copy the password to the clipboard for easy pasting where you want it.
 
-Happy Code Generating!
+Happy Password Generating!
